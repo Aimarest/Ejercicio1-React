@@ -27,8 +27,11 @@ setInterval(() => {
  function handleStopChange(){
     clearInterval(intervalRef.current);
  }
+ function handleStopClick(){
+    clearInterval(intervalRef.current);
+ }
     return (
-        <div className='container' onMouseOver={handleRandomColor} onMouseOut={handleStopChange}>
+        <div className='container' onMouseOver={handleRandomColor} onMouseOut={handleStopChange} onDoubleClick={handleStopClick}>
             <h1 className='container__title'>Square that changes his background-color</h1>
             <div className="container__square" style={{ backgroundColor: color}} ></div>
         </div>
