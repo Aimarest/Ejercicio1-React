@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__square {
+        background-color: black;
+        width: 255px;
+        height: 255px;
+    }
+}
